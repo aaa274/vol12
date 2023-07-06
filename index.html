@@ -1,0 +1,154 @@
+<html lang="ja"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i2224015 - web演習第11回目の課題</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+    <style>
+        body {
+            background: #efefef;
+            font-family:'DotGothic16',sans-serif;
+
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .menu li {
+            /* margin: 16px; */
+            /* 上のやつは classの中にあるmenuの大きさが変わりますよッと*/
+            flex-basis: 20%;
+        }
+
+        .wrap {
+            /* max-width: 1080px; */
+            margin: auto;
+            background: #ffffff;
+        }
+
+        .card {
+            /* max-width: 300px; */
+            flex-basis: 29.33%;
+            margin: 2% 2% 2% 2%;
+            /* 上は、上下左右の余白サイズに関してらしいよ */
+            border: 1px #000 solid;
+        }
+
+        .txt {
+            margin: 4% 6%;
+            line-height: 1.3;
+            font-size: 14px;
+        }
+
+        .h-large {
+            text-align: center;
+            margin: 80px auto 40px;
+            font-size: 32px;
+        }
+
+        .card-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width:500px) {
+
+            /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+            h1 {
+                color: brown;
+            }
+
+            body {
+                background: yellow;
+            }
+
+            .card {
+                flex-basis: 100%;
+            }
+
+            .h-large {
+                margin: 40px auto 24px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <nav>
+                <ul class="menu">
+                    <li><a href="">menu1</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a></li>
+                    <li><a href="">menu4</a></li>
+                    <li><a href="">menu5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ショートカット　コマンド＋スラッシュでコメントアウトできますよ -->
+    <main>
+        <div class="wrap">
+            <h1 class="h-large">テストタイトル</h1>
+            <div class="card-wrap">
+                <div class="card">
+                    <img src="inu syasin onnna.jpg" class="animate__animated animate__bounce">
+                    <div class="txt">
+                        <p>写真の解説：仮面ライダーになることを夢見るワンコだよ</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="inu syasin onnna.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説：仮面ライダーになることを夢見るワンコだよ</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="inu syasin onnna.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説：仮面ライダーになることを夢見るワンコだよ</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="inu syasin onnna.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説：仮面ライダーになることを夢見るワンコだよ</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="inu syasin onnna.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説：仮面ライダーになることを夢見るワンコだよ</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+       
+    </main>
+
+    <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+</body></html>
